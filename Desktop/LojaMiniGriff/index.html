@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Griff</title>
+    <title>Mini Griff - Moda Infantil</title>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./vendor/fonts.css">
+    <link rel="icon" href="../assets/minigrifficon.png" type="image/x-icon">
 </head>
 <body>
     <div id="page">
@@ -22,10 +23,72 @@
             </ul>    
         </header>
         <main>
-         <section class="banner"></section>
-        
+            <section class="banner">
+                <div class="banner__slideshow">
+                    <div class="banner__slide active" style="background-image: url('../assets/Roupas4.jpg')"></div>
+                    <div class="banner__slide" style="background-image: url('../assets/Roupas2.jpg')"></div>
+                    <div class="banner__slide" style="background-image: url('../assets/Roupas3.jpg')"></div>
+                </div>
+                <div class="banner__controls">
+                    <div class="banner__dot active"></div>
+                    <div class="banner__dot"></div>
+                    <div class="banner__dot"></div>
+                </div>
+            </section>
+            <section>
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="#bebes">Bebês</a></li>
+                        <li class="main-nav__item"><a href="#meninos">Meninos</a></li>
+                        <li class="main-nav__item"><a href="#meninas">Meninas</a></li>
+                        <li class="main-nav__item"><a href="#conjuntos">Conjuntos</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="content"> 
+                <h1 class="content__promotion">Mais Vendidos</h1>
+                <div class="content__catalogo">
+                    <div class="content__catalogo-grid">
+                        <div class="catalogo__item">
+                            <img class="catalogo__image" src="../assets/Roupas5.jpg" alt="Conjunto Puma">
+                            <p class="catalogo__title">Conjunto Puma Infantil</p>
+                            <p>R$ 149,90</p>
+                        </div>
+                        <div class="catalogo__item">
+                            <img class="catalogo__image" src="../assets/Roupas2.jpg" alt="Produto 2">
+                            <p>Produto 2</p>
+                            <p>R$ 99,90</p>
+                        </div>
+                        <div class="catalogo__item">
+                            <img class="catalogo__image" src="../assets/Roupas3.jpg" alt="Produto 3">
+                            <p>Produto 3</p>
+                            <p>R$ 79,90</p>
+                        </div>
+                        <div class="catalogo__item">
+                            <img class="catalogo__image" src="../assets/Roupas6.jpg" alt="Produto 4">
+                            <p>Produto 4</p>
+                            <p>R$ 129,90</p>
+                        </div>
+                        <div class="catalogo__item">
+                            <img class="catalogo__image" src="../assets/produto5.jpg" alt="Produto 5">
+                            <p>Produto 5</p>
+                            <p>R$ 89,90</p>
+                        </div>
+                        <div class="catalogo__item">
+                            <img class="catalogo__image" src="../assets/Roupas7.jpg" alt="Produto 6">
+                            <p>Produto 4</p>
+                            <p>R$ 129,90</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer class="footer"> </footer>
+        <footer class="footer">
+            <div>
+
+            </div>    
+        </footer>
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
