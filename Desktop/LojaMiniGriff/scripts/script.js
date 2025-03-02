@@ -26,4 +26,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Alterna slides automaticamente a cada 5 segundos
     setInterval(nextSlide, 5000);
+
+    // Add scroll animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.catalogo__item').forEach(item => {
+        observer.observe(item);
+    });
+
+    // Catalog navigation
+    const catalogGrid = document.querySelector('.content__catalogo-grid');
+    const prevButton = document.querySelector('.catalog-nav--prev');
+    const nextButton = document.querySelector('.catalog-nav--next');
+
+    prevButton.addEventListener('click', () => {
+        catalogGrid.scrollBy({
+            left: -320,
+            behavior: 'smooth'
+        });
+    });
+
+    nextButton.addEventListener('click', () => {
+        catalogGrid.scrollBy({
+            left: 320,
+            behavior: 'smooth'
+        });
+    });
 });
