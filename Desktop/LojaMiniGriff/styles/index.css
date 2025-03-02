@@ -231,6 +231,9 @@ a{
 
 .footer__address{
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer__adress-iframe{
@@ -241,6 +244,7 @@ a{
 .footer__institutional{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     color: whitesmoke;
     font-size: 0.9rem;
     width: 250px;
@@ -249,7 +253,7 @@ a{
 .footer__contact{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     color: whitesmoke;
 }
 
@@ -263,12 +267,19 @@ a{
 
 .footer__social{
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer__social-icons{
     width: 0.9rem;
     height: 0.9rem;
     filter: brightness(0) invert(1);
+    list-style: none;
+}
+
+li{
     list-style: none;
 }
 
@@ -301,6 +312,6 @@ a{
 .footer__payment{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     color: whitesmoke;
 }
