@@ -60,4 +60,23 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+
+    // Second catalog navigation
+    const catalogGridSecond = document.querySelector('.content__catalogo-grid--second');
+    const prevButtonSecond = document.querySelector('.content__catalogo--second .catalog-nav--prev');
+    const nextButtonSecond = document.querySelector('.content__catalogo--second .catalog-nav--next');
+
+    prevButtonSecond.addEventListener('click', () => {
+        catalogGridSecond.scrollBy({
+            left: -320,
+            behavior: 'smooth'
+        });
+    });
+
+    nextButtonSecond.addEventListener('click', () => {
+        catalogGridSecond.scrollBy({
+            left: 320,
+            behavior: 'smooth'
+        });
+    });
 });
