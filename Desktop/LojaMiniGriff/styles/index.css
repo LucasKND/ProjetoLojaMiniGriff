@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,8 +42,9 @@ body {
 
 .header__logo{
     display: flex;
-    width: 80px;
-    height: 80px;
+    width: 410px;
+    height: 270px;
+    transform: translateY(17px);
 }
 
 .header__nav{
@@ -56,7 +57,7 @@ body {
     padding: 0.5rem;
     border-radius: 7px;
     width: 20%;
-    height: 1.5rem;
+    height: 20px;
 }
 
 .banner{
@@ -151,6 +152,8 @@ a{
 
 .content__promotion {
     margin-bottom: 2rem;
+    font-family: 'Jokerman STD';
+    font-size: 2.5rem;
 }
 
 .content__catalogo {
