@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Griff - Pagamento</title>
+    <link rel="stylesheet" href="../styles/payment.css">
+    <link rel="stylesheet" href="../vendor/fonts.css">
+    <link rel="icon" href="../assets/minigrifficon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div><img class="logo" src="../assets/LOGO.png"></div>
+    <div class="steps">
+        <span>CARRINHO</span>
+        <span>ENTREGA</span>
+        <span class="active">PAGAMENTO</span>
+    </div>
+    <div class="secure-environment">
+        <img class="padlock" src="../assets/padlock.png"> Ambiente 100% seguro
+    </div>
+</header>
+
+<main class="container">
+    <div class="payment-container">
+        <h2>Escolha sua forma de pagamento</h2>
+        
+        <div class="payment-methods">
+            <div class="payment-method active">
+                <img src="/api/placeholder/60/60" alt="Pix">
+                <p>Pix</p>
+            </div>
+            <div class="payment-method">
+                <img src="/api/placeholder/60/60" alt="Cartão de Crédito">
+                <p>Cartão de Crédito</p>
+            </div>
+            <div class="payment-method">
+                <img src="/api/placeholder/60/60" alt="Boleto">
+                <p>Boleto Bancário</p>
+            </div>
+        </div>
+
+        <div class="payment-details">
+            <div class="pix-details">
+                <div class="qr-code">
+                    QR Code
+                </div>
+                <div>
+                    <h3>Pagamento via Pix</h3>
+                    <p>Escaneie o QR Code ou copie o código para pagar instantaneamente</p>
+                    <button class="cta-button">Copiar Código Pix</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit-card-form" style="display: none;">
+            <input type="text" placeholder="Número do Cartão">
+            <div class="input-row">
+                <input type="text" placeholder="Nome no Cartão">
+                <input type="text" placeholder="CVV">
+            </div>
+            <div class="input-row">
+                <input type="text" placeholder="Validade">
+                <select style="width: 100%; padding: 10px;">
+                    <option>Selecione o número de parcelas</option>
+                    <option>1x R$ 161,97 (à vista)</option>
+                    <option>2x R$ 80,98 sem juros</option>
+                    <option>3x R$ 53,99 sem juros</option>
+                </select>
+            </div>
+            <div class="installment-options">
+                <div class="installment-option">1x R$ 161,97 (à vista)</div>
+                <div class="installment-option">2x R$ 80,98 sem juros</div>
+                <div class="installment-option">3x R$ 53,99 sem juros</div>
+            </div>
+            <button class="cta-button">Finalizar Pagamento</button>
+        </div>
+
+        <div className="security-info">
+             Seus dados estão seguros e criptografados
+        </div>
+    </div>
+    
+    <div class="order-summary">
+        
+        <div style="display: flex; margin-bottom: 15px;">
+            <div style="width: 100px; height: 100px; background-color: #f1f3f5; margin-right: 15px;"></div>
+            <div>
+                <p>Conjunto Infantil Menina</p>
+                <p>R$ 161,97</p>
+            </div>
+        </div>
+        
+        <div style="border-top: 1px solid #e9ecef; padding-top: 15px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <span>Subtotal</span>
+                <span>R$ 269,95</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <span>Descontos</span>
+                <span>R$ -107,98</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-weight: bold;">
+                <span>Total</span>
+                <span>R$ 161,97</span>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../scripts/script.js"></script>
+</body>
+</html>

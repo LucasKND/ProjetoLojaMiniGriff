@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Griff - Carrinho</title>
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="stylesheet" href="../vendor/fonts.css">
+    <link rel="icon" href="../assets/minigrifficon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <div><img class="logo" src="../assets/LOGO.png" ></div>
+    <div class="steps">
+        <span class="active">CARRINHO</span>
+        <span>ENTREGA</span>
+        <span>PAGAMENTO</span>
+    </div>
+    <div class="secure-environment">
+        <img class="padlock" src="../assets/padlock.png"> Ambiente 100% seguro
+    </div>
+</header>
+
+<main class="container">
+    <div class="cart-container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>PRODUTO</th>
+                    <th>ENTREGA</th>
+                    <th>PREÇO</th>
+                    <th>QUANTIDADE</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product-details">
+                            <div class="product-image"></div>
+                            <span class="product-name">Vestido Infantil Menina Bichinhos</span>
+                        </div>
+                    </td>
+                    <td>EM ATÉ 15 DIAS</td>
+                    <td>R$ 99,90</td>
+                    <td>
+                        <div class="quantity-control">
+                            <input type="number" value="1" min="1" max="10">
+                        </div>
+                    </td>
+                    <td>R$ 99,90</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="delivery-section">
+            <span>Receber 1 item em xxxxx-xxx</span>
+            <select class="delivery-select">
+                <option>Econômica - Em até 16 dias - R$ 26,53</option>
+                <option>Express - Em até 7 dias - R$ 31,52</option>
+            </select>
+        </div>
+
+        <div class="coupon-section">
+            <button class="coupon-button">ADICIONAR CUPOM DE DESCONTO</button>
+        </div>
+
+        <div class="totals-section">
+            <div class="total-row">
+                <span>Subtotal</span>
+                <span>R$ 99,90</span>
+            </div>
+            <div class="total-row">
+                <span>Entrega</span>
+                <span>R$ 26,53</span>
+            </div>
+            <div class="total-row">
+                <strong>Total</strong>
+                <strong>R$ 126,43</strong>
+            </div>
+            <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <button class="more-products-button">ESCOLHER MAIS PRODUTOS</button>
+                <button class="checkout-button">Ir para a entrega</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="order-summary">
+        <div style="display: flex; margin-bottom: 15px;">
+            <div style="width: 100px; height: 100px; background-color: #f1f3f5; margin-right: 15px;"></div>
+            <div>
+                <p>Conjunto Infantil Menina</p>
+                <p>R$ 99,90</p>
+            </div>
+        </div>
+        
+        <div style="border-top: 1px solid #e9ecef; padding-top: 15px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <span>Subtotal</span>
+                <span>R$ 99,90</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <span>Descontos</span>
+                <span>R$ 0,00</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-weight: bold;">
+                <span>Total</span>
+                <span>R$ 126,43</span>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

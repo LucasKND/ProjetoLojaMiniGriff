@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Griff - Entrega</title>
+    <link rel="stylesheet" href="../styles/delivery.css">
+    <link rel="stylesheet" href="../vendor/fonts.css">
+    <link rel="icon" href="../assets/minigrifficon.png" type="image/x-icon">
+</head>
+<body>
+
+<header class="header">
+    <div><img class="logo" src="../assets/LOGO.png"></div>
+    <div class="steps">
+        <span>CARRINHO</span>
+        <span class="active">ENTREGA</span>
+        <span>PAGAMENTO</span>
+    </div>
+    <div class="secure-environment">
+        <img class="padlock" src="../assets/padlock.png"> Ambiente 100% seguro
+    </div>
+</header>
+
+<main class="container">
+    <div class="delivery-container">
+        <div class="delivery-form">
+            <div class="form-title">
+            
+                <h2>Dados pessoais</h2>
+            </div>
+            <p class="form-description">
+                Solicitamos apenas as informações essenciais para a realização da compra.
+            </p>
+            
+            <input type="email" placeholder="E-mail" style="width: 100%; margin-bottom: 15px; padding: 10px;">
+            
+            <div class="input-group">
+                <input type="text" placeholder="Primeiro nome">
+                <input type="text" placeholder="Último nome">
+            </div>
+            
+            <div class="input-group">
+                <input type="text" placeholder="CPF" style="width: 60%;">
+                <input type="tel" placeholder="Telefone" style="width: 40%;">
+            </div>
+            
+            <div style="color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer; 
+    margin-bottom: 6px;">
+                <p>Não tenho telefone do país (Brasil)</p>
+                <p>Incluir dados de pessoa jurídica</p>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="promo">
+                <label for="promo">Quero receber e-mails com promoções</label>
+            </div>
+            
+            <button class="cta-button">Ir para o pagamento</button>
+        </div>
+    </div>
+    
+    <div class="order-summary">
+        <div class="product-details">
+            <div class="product-image"></div>
+            <p>Conjunto Infantil Menina Top + Saia Estampa jardim</p>
+            <p>R$ 161,97</p>
+        </div>
+        
+        <!--<div class="cashback-section">
+            <p>Cashback</p>
+            <p>Você precisa estar logado para verificar o seu bônus</p>
+            <button class="cashback-login">Fazer Login</button>
+        </div>-->
+        
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>R$ 269,95</span>
+            </div>
+            <div class="summary-row">
+                <span>Descontos</span>
+                <span>R$ -107,98</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span>R$ 161,97</span>
+            </div>
+            
+           <!-- <button class="cta-button" style="margin-top: 15px;">Continuar Comprando</button>-->
+        </div>
+    </div>
+</main>
+</body>
+</html>
