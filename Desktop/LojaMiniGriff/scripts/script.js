@@ -103,6 +103,10 @@ document.getElementById('login').addEventListener('click', function() {
     window.location.href = '../pages/login.html';
 });
 
+document.getElementById('header-cart').addEventListener('click', function () {
+    window.location.href = '../pages/cart.html';
+})
+
 
 
 

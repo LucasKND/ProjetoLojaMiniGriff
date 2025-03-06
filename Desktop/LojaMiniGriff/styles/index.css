@@ -53,6 +53,10 @@ body {
     gap: 1.5rem;
 }
 
+.header__nav-item{
+    cursor: pointer;
+}
+
 .header__search{
     padding: 0.5rem;
     border-radius: 7px;
@@ -155,6 +159,19 @@ a{
     font-family: 'Jokerman STD';
     font-size: 2.5rem;
 }
+
+.content__promotion span:nth-child(1) { color: #FF69B4; }  /* Rosa */
+.content__promotion span:nth-child(2) { color: #87CEEB; }  /* Azul Claro */
+.content__promotion span:nth-child(3) { color: #98FB98; }  /* Verde Claro */
+.content__promotion span:nth-child(4) { color: #FFA07A; }  /* Salmão */
+.content__promotion span:nth-child(6) { color: #DDA0DD; }  /* Lilás */
+.content__promotion span:nth-child(7) { color: #F0E68C; }  /* Amarelo */
+.content__promotion span:nth-child(8) { color: #FF69B4; }  /* Rosa */
+.content__promotion span:nth-child(9) { color: #87CEEB; }  /* Azul Claro */
+.content__promotion span:nth-child(10) { color: #98FB98; } /* Verde Claro */
+.content__promotion span:nth-child(11) { color: #FFA07A; } /* Salmão */
+.content__promotion span:nth-child(12) { color: #DDA0DD; } /* Lilás */
+.content__promotion span:nth-child(13) { color: #F0E68C; } /* Amarelo */
 
 .content__catalogo {
     width: 100%;

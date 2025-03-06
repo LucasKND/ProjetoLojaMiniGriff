@@ -12,9 +12,9 @@
 <header class="header">
     <div><img class="logo" src="../assets/LOGO.png" ></div>
     <div class="steps">
-        <span class="active">CARRINHO</span>
-        <span>ENTREGA</span>
-        <span>PAGAMENTO</span>
+        <span id="header-cart" class="active">CARRINHO</span>
+        <span id="header-delivery">ENTREGA</span>
+        <span id="header-payment">PAGAMENTO</span>
     </div>
     <div class="secure-environment">
         <img class="padlock" src="../assets/padlock.png"> Ambiente 100% seguro
@@ -80,7 +80,7 @@
             </div>
             <div style="margin-top: 20px; display: flex; justify-content: space-between;">
                 <button class="more-products-button">ESCOLHER MAIS PRODUTOS</button>
-                <button id="irParaEntrega" class="checkout-button">Ir para a entrega</button>
+                <button class="checkout-button"><a href="../pages/delivery.html"> Ir para a entrega</a></button>
             </div>
         </div>
     </div>
@@ -110,5 +110,6 @@
         </div>
     </div>
 </main>
+<script src="../scripts/script.js"></script>
 </body>
 </html>

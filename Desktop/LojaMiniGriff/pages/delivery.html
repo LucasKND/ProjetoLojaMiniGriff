@@ -13,9 +13,9 @@
 <header class="header">
     <div><img class="logo" src="../assets/LOGO.png"></div>
     <div class="steps">
-        <span>CARRINHO</span>
-        <span class="active">ENTREGA</span>
-        <span>PAGAMENTO</span>
+        <span id="header-cart">CARRINHO</span>
+        <span id="header-delivery"class="active">ENTREGA</span>
+        <span id="header-payment">PAGAMENTO</span>
     </div>
     <div class="secure-environment">
         <img class="padlock" src="../assets/padlock.png"> Ambiente 100% seguro
@@ -59,7 +59,7 @@
                 <label for="promo">Quero receber e-mails com promoções</label>
             </div>
             
-            <button class="cta-button">Ir para o pagamento</button>
+            <button class="cta-button"><a href="../pages/payment.html">Ir para o pagamento</a></button>
         </div>
     </div>
     
@@ -94,5 +94,6 @@
         </div>
     </div>
 </main>
+<script src="../scripts/script.js"></script>
 </body>
 </html>

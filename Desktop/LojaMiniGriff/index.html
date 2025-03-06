@@ -17,11 +17,11 @@
             <label for="busca"></label>
             <input class="header__search" type="text" placeholder="Buscar..." id="busca"> </input>
             <ul class="header__nav"> 
-                <li> Contato </li>
-                <li> Favoritos</li>
-                <li id="meuCarrinho"> Meu carrinho</li>
-                <li> Sobre nos</li>
-                <li id="login"> Login</li>
+                <li class="header__nav-item"> <a href="#contact"><img style="width: 0.9rem;" src="../assets/headset.png"> Contato </a></li>
+                <!--<li class="header__nav-item"> Favoritos</li>-->
+                <li class="header__nav-item"> <a href="#about-us"><img style="width: 0.9rem;" src="../assets/users-alt.png"> Sobre nos</a></li>
+                <li class="header__nav-item" id="meuCarrinho"><img style="width: 0.9rem;" src="../assets/shopping-cart.png"> Meu carrinho</li>
+                <li class="header__nav-item" id="login"> <img style="width: 0.9rem;" src="../assets/user.png"> Login</li>
             </ul>    
         </header>
         <main>
@@ -49,7 +49,20 @@
                 </nav>
             </section>
             <section class="content"> 
-                <h1 class="content__promotion" style="transform: translateY(-0.2rem);">MAIS VENDIDOS</h1>
+                <h1 class="content__promotion" style="transform: translateY(-0.2rem);">
+                    <span>M</span>
+                    <span>A</span>
+                    <span>I</span>
+                    <span>S</span>
+                    <span> </span>
+                    <span>V</span>
+                    <span>E</span>
+                    <span>N</span>
+                    <span>D</span>
+                    <span>I</span>
+                    <span>D</span>
+                    <span>O</span>
+                    <span>S</span></h1>
                 <div class="content__catalogo">
                     <button class="catalog-nav catalog-nav--prev">←</button>
                     <button class="catalog-nav catalog-nav--next">→</button>
@@ -188,7 +201,12 @@
                 </div>
             </section>
             <section class="content__grid5x2">
-                <h2 class="content__promotion" style="padding-top: 3rem;" id="bebes">BEBÊS</h2>
+                <h2 class="content__promotion" style="padding-top: 3rem; color: #FFA07A;" id="bebes">
+                    <span style="color: #FF99B3;">B</span>
+                    <span style="color: #89CCD9;">E</span>
+                    <span style="color: #FFCD9B;">B</span>
+                    <span style="color: #D6D6F5;">Ê</span>
+                    <span style="color: #7FFF7F;">S</span></h2>
                 <div class="content__catalogo--bebe">
                     <div class="content__catalogo-grid--bebe">
                         <div class="catalogo__item">
@@ -324,7 +342,14 @@
                 </div>
             </section>
             <section class="content__grid5x2">
-                <h2 class="content__promotion" style="color: #4682B4;" id="meninos">MENINOS</h2>
+                <h2 class="content__promotion" style="color: #4682B4;" id="meninos">    
+                    <span style="color: #4169E1;">M</span>
+                    <span style="color: #1E90FF;">E</span>
+                    <span style="color: #00BFFF;">N</span>
+                    <span style="color: #87CEEB;">I</span>
+                    <span style="color: #4682B4;">N</span>
+                    <span style="color: #6495ED;">O</span>
+                    <span style="color: #0000CD;">S</span></h2>
                 <div class="content__catalogo--bebe">
                     <div class="content__catalogo-grid--bebe">
                         <div class="catalogo__item">
@@ -460,7 +485,14 @@
                 </div>
             </section>
             <section class="content__grid5x2">
-                <h2 class="content__promotion" style="color: #FF69B4;" id="meninas">MENINAS</h2>
+                <h2 class="content__promotion" style="color: #FF69B4;" id="meninas"> 
+                    <span style="color: #FF69B4;">M</span>
+                    <span style="color: #FF1493;">E</span>
+                    <span style="color: #DB7093;">N</span>
+                    <span style="color: #FFB6C1;">I</span>
+                    <span style="color: #FFC0CB;">N</span>
+                    <span style="color: #FF69B4;">A</span>
+                    <span style="color: #FF1493;">S</span></h2>
                 <div class="content__catalogo--bebe">
                     <div class="content__catalogo-grid--bebe">
                         <div class="catalogo__item">
@@ -596,7 +628,16 @@
                 </div>
             </section>
             <section class="content__grid5x2">
-                <h2 class="content__promotion" id="conjuntos">CONJUNTOS</h2>
+                <h2 class="content__promotion" id="conjuntos"> 
+                    <span style="color: #FF69B4;">C</span>
+                    <span style="color: #87CEEB;">O</span>
+                    <span style="color: #98FB98;">N</span>
+                    <span style="color: #FFA07A;">J</span>
+                    <span style="color: #DDA0DD;">U</span>
+                    <span style="color: #F0E68C;">N</span>
+                    <span style="color: #FF69B4;">T</span>
+                    <span style="color: #87CEEB;">O</span>
+                    <span style="color: #98FB98;">S</span></h2>
                 <div class="content__catalogo--bebe">
                     <div class="content__catalogo-grid--bebe">
                         <div class="catalogo__item">
@@ -742,7 +783,7 @@
             </div>
             <div class="footer__institutional">
                 <ul>
-                <h3>Sobre nos</h3>
+                <h3 id="about-us">Sobre nos</h3>
                 <p>Somos uma loja especializada em moda infantil, oferecendo uma ampla variedade de roupas e acessórios para bebês, meninos e meninas. Nosso objetivo é proporcionar conforto, estilo e qualidade para os pequenos.</p>
                 </ul>
             </div>
@@ -756,7 +797,7 @@
             </div>
             <div class="footer__contact">
                 <ul class="footer__contact-items">
-                    <h3> Contato </h3>
+                    <h3 id="contact"> Contato </h3>
                     <li><img class="footer__contact-envelope" src="../assets/envelope.png"> Email: isabelamachado-22@hotmail.com</li>
                     <li><img class="footer__contact-phone-call" src="../assets/phone-call.png"> Telefone: (24) 99956-5757</li>
                 </ul>
