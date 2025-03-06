@@ -32,10 +32,41 @@ body {
     gap: 1.6rem;
     color: #999;
     font-family: 'Jokerman Std', sans-serif;
+    position: relative;
+}
+.steps span {
+    position: relative;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.steps .cart-text {
+    color: #FF69B4;
+}
+.steps .delivery-text {
+    color: #87CEEB;
+}
+.steps .payment-text {
+    color: #98FB98;
+}
+.steps span:hover {
+    transform: translateY(-3px) rotate(5deg);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 .steps .active {
     color: #1e1e1e;
     font-weight: bold;
+    animation: bounce 1s ease;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
 .padlock{
     width: 1.5rem;

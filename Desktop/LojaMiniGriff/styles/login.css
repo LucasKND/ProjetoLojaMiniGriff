@@ -1,11 +1,10 @@
-
 input:valid {
     border-bottom: 1px solid rgb(9, 150, 56);
 }
 
 body{
     font-family: 'Inter', Helvetica, sans-serif;
-    background-color: rgb(31, 31, 31);
+    background-color: #f8f8f8;
     padding: 0;
     box-sizing: border-box;
     overflow-y: hidden;
@@ -25,13 +24,13 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background:linear-gradient(60deg, rgb(31, 31, 31)70%, rgba(100, 11, 11, 0.473));
-    color: rgb(255, 0, 0);
+    background: white;
+    color: #FF69B4;
     padding: 30px;
     height: fit-content;
     width: 240px;
-    border-radius: 5px;
-    box-shadow: 0 15px 33px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: 0.5s ease;
 }
 
@@ -60,7 +59,7 @@ main{
     
     a{
         text-decoration: none;
-        color: rgb(218, 133, 133);
+        color: #87CEEB;
     }
     a:hover{
         text-decoration: underline;
@@ -70,13 +69,13 @@ main{
 input{
     box-sizing: border-box;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     height: 25px;
-    border: none;
+    border: 1px solid #e0e0e0;
     width: 100%;
-    background-color: rgb(46, 46, 46);
+    background-color: white;
     transition: 0.2s ease;
-    color: white;
+    color: #333;
     padding-left: 6px;
     padding-right: 6px;
     
@@ -84,10 +83,10 @@ input{
 }
 
 input:focus{
-    border: none;
-    transform: translateY(-5px);
+    border: 1px solid #FF69B4;
+    transform: translateY(-2px);
     outline: none;
-    box-shadow: 0 3px 0px 0 rgba(255, 14, 14, 0.3);
+    box-shadow: 0 3px 8px rgba(255, 105, 180, 0.2);
 }
 
 h1{
@@ -97,17 +96,14 @@ h1{
 .login_button{
     width: 100%;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     color: white;
-    background:linear-gradient(90deg, rgb(255, 0, 0), rgb(100, 11, 11));
+    background: linear-gradient(45deg, #FF69B4, #87CEEB);
     transition: 0.3s ease;
     cursor: pointer;
 }
 .login_button:hover{
-    transform: scale(1.05);
-    border: none;
-    color: white;
-    background:linear-gradient(90deg, rgb(255, 0, 0), rgb(100, 11, 11));
-    box-shadow: 0 0px 20px 0 rgba(255, 14, 14, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
 }
