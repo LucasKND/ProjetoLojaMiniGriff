@@ -95,3 +95,25 @@ document.querySelectorAll('.payment-method').forEach(method => {
     });
 });
 
+document.getElementById('meuCarrinho').addEventListener('click', function() {
+    window.location.href = '../pages/cart.html';
+});
+
+document.getElementById('login').addEventListener('click', function() {
+    window.location.href = '../pages/login.html';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+/* document.getElementById('irParaEntrega').addEventListener('click', function() {
+    window.location.href = '../pages/delivery.html'; 
+}); */

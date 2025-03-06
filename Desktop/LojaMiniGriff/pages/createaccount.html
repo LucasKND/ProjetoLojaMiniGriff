@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../styles/createaccount.css">
+    <link rel="stylesheet" href="../vendor/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+        <main>
+            <section class="login_section" id="login_section">
+                <form action="cadastrar" id="register_form">
+                    <h1>Cadastro</h1>
+                    <input required type="email" name="email" id="user_login" placeholder="Email" maxlength="30">
+                    <input required type="password" placeholder="Crie uma senha" minlength="8" maxlength="12" name="Senha" id="password_register">
+                   
+                    <input required type="password" placeholder="Confirme sua senha" maxlength="12" name="Senha" id="password_confirm">
+                    <input type="tel" required placeholder="Numero de telefone" name="telefone" accept="number">
+                </form>
+            
+                <div class="forgot">
+            
+                    <p>Já tem uma conta?</p>
+                    <a href="login.html">Login</a>
+                    
+            
+                </div>
+                <button type="button"
+                class="login_button">Criar conta</button>
+            </section>
+        </main>
+    
+</body>
+</html>
